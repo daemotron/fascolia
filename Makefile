@@ -5,7 +5,7 @@ clean:
 
 virtualenv:
 	python -m venv venv
-	venv/bin/pip install -r requirements-dev.txt
+	venv/bin/pip install -r requirements/development.txt
 	venv/bin/python setup.py develop
 	cp config/pip.ini venv/pip.conf
 	@echo

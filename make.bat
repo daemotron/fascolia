@@ -24,7 +24,7 @@ if "%1" == "clean" (
 
 if "%1" == "virtualenv" (
     python.exe -m venv venv
-	venv\Scripts\pip install -r requirements-dev.txt
+	venv\Scripts\pip install -r requirements\development.txt
 	venv\Scripts\python setup.py develop
     copy config\pip.ini venv
 	echo.

@@ -15,7 +15,7 @@ function clean() {
 
 function virtualenv() {
     python.exe -m venv venv
-	.\venv\Scripts\pip.exe install -r requirements-dev.txt
+	.\venv\Scripts\pip.exe install -r .\requirements\development.txt
 	.\venv\Scripts\python.exe .\setup.py develop
     Copy-Item ".\config\pip.ini" - Destination ".\venv"
 	Write-Output ""
